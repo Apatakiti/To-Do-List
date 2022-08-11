@@ -1,5 +1,3 @@
-import './style.css';
-
 const theToDos = [
   {
     description: 'i want to eat',
