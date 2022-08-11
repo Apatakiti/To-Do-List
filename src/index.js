@@ -17,9 +17,8 @@ const theToDos = [
     index: 2,
   },
 ];
-
+const funcToDo = () => {
 const todos = document.getElementsByClassName('to-dos');
-
 todos[0].innerHTML = '';
 for (let i = 0; i < theToDos.length; i += 1) {
   todos[0].innerHTML += `
@@ -31,4 +30,6 @@ for (let i = 0; i < theToDos.length; i += 1) {
                <i class="fa-solid fa-ellipsis-vertical" id="ellip"></i>
             </div>
          </div>`;
+   }
 }
+funcToDo();
