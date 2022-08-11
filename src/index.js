@@ -18,10 +18,10 @@ const theToDos = [
   },
 ];
 const funcToDo = () => {
-const todos = document.getElementsByClassName('to-dos');
-todos[0].innerHTML = '';
-for (let i = 0; i < theToDos.length; i += 1) {
-  todos[0].innerHTML += `
+  const todos = document.getElementsByClassName('to-dos');
+  todos[0].innerHTML = '';
+  for (let i = 0; i < theToDos.length; i += 1) {
+    todos[0].innerHTML += `
             <div class="todo-container">
             <div class="check-descrip">
             <i class="fa-regular fa-square"></i>
@@ -30,6 +30,6 @@ for (let i = 0; i < theToDos.length; i += 1) {
                <i class="fa-solid fa-ellipsis-vertical" id="ellip"></i>
             </div>
          </div>`;
-   }
-}
+  }
+};
 funcToDo();
