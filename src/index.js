@@ -42,7 +42,7 @@ class TaskList {
       // create button
       eachbtn[lis.index] = document.createElement('button');
       eachbtn[lis.index].setAttribute('id', lis.index);
-      eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-ellipsis-vertical"></i>';
+      eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-trash"></i>';
 
       // Div
       checkNparagDiv[lis.index] = document.createElement('div');
@@ -65,8 +65,12 @@ class TaskList {
         });
       });
 
+      eachbtn[lis.index].addEventListener('click', () => {
+        this.delete(eachList[lis.index]);
+      })
+
       eachList[lis.index].addEventListener('mouseleave', (eve) => {
-        eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-ellipsis-vertical"></i>';
+        eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-trash"></i>';
         this.update(eve.target.id, eve.target.innerText);
       });
 
