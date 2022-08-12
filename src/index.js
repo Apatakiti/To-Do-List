@@ -96,7 +96,6 @@ class TaskList {
   add(description, completed, index) {
     const allTask = new Alltask(description, completed, index);
     this.doings.push(allTask);
-    localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
   }
 
   delete(num) {
@@ -110,7 +109,6 @@ class TaskList {
       lis.index = index;
     });
     this.listFormat();
-    localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
   }
 
   update(indexList, description) {
@@ -121,7 +119,6 @@ class TaskList {
       lis.index = index;
     });
     this.listFormat();
-    localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
   }
 }
 
