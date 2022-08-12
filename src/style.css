@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
@@ -20,11 +21,38 @@ body {
 
 .today-to {
   padding: 3% 0;
+  display: flex;
+}
+
+#today-title {
+  flex: 1;
+}
+
+#sync {
+  width: 7%;
+}
+
+.the-input {
+  display: flex;
 }
 
 #theinput {
+  flex: 1;
   border: none;
   padding: 3% 0;
+  outline: none;
+}
+
+#enter {
+  width: 7%;
+}
+
+.ellipsis {
+  width: 7%;
+}
+
+.del {
+  width: 7%;
 }
 
 .to-dos {
@@ -78,4 +106,25 @@ body {
 
 :-ms-input-placeholder {
   font-style: italic;
+}
+
+
+
+.indList {
+  display: flex;
+  padding: 3% 0;
+}
+
+.eachParag {
+  margin-left: 4%;
+}
+
+.checkNparagDiv {
+  flex: 1;
+}
+
+.checked {
+  background-color: rgb(199, 199, 199);
+  text-decoration: line-through;
+  color: #a6bdbe;
 }
