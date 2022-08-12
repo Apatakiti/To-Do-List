@@ -130,7 +130,9 @@ const enterBtn = document.getElementById('enter');
 const input = document.getElementById('theinput');
 enterBtn.addEventListener('click', () => {
   if (!input.value.trim()) {
-  } else {
+    // !input.value
+  }
+   else {
     taskList.add(input.value, completed, index);
     taskList.listFormat();
     input.value = '';
