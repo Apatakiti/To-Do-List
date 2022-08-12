@@ -67,7 +67,7 @@ class TaskList {
 
       eachbtn[lis.index].addEventListener('click', () => {
         this.delete(eachList[lis.index]);
-      })
+      });
 
       eachList[lis.index].addEventListener('mouseleave', (eve) => {
         eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-trash"></i>';
