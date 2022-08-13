@@ -1,6 +1,6 @@
 export default class Status {
-  constructor(completed) {
-    this.completed = completed = false;
+  constructor() {
+    this.completed = false;
   }
 
     checked = (element) => {
