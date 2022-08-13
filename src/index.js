@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Alltask from './modules/module1.js';
 import Status from './modules/module2.js';
 
@@ -82,8 +83,9 @@ class TaskList {
         } else {
           status.unchecked(this.doings[lis.index]);
         }
-
         this.update(e.target.nextSibling.id, e.target.nextSibling.innerText);
+
+        localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
       });
 
       // conditions after checking
@@ -113,6 +115,8 @@ class TaskList {
       lis.index = index;
     });
     this.listFormat();
+
+    localStorage.setItem('storedlist', JSON.stringify(taskList.doings)); 
   }
 
   update(indexList, description) {
@@ -126,7 +130,7 @@ class TaskList {
   }
 
   clearAllCompleted() {
-    this.doings = this.doings.filter((element) => element.completed === false);
+    this.doings = this.doings.filter((element) => element.completed === true);
     localStorage.setItem('storedlist', JSON.stringify(this.doings));
     window.location.reload();
   }
@@ -152,7 +156,7 @@ enterBtn.addEventListener('click', () => {
     input.value = '';
     index += 1;
   }
-  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+  // localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
 });
 
 // keyboard Enter button support
