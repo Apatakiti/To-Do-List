@@ -127,20 +127,19 @@ class TaskList {
 
   clearAllCompleted() {
     this.doings = this.doings.filter((element) => element.completed === false);
-    localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+    localStorage.setItem('storedlist', JSON.stringify(this.doings));
     window.location.reload();
   }
- 
 }
 
 let index = 0;
 const completed = false;
 const taskList = new TaskList();
 
-const clearAllComptd = document.querySelector('.clear')
+const clearAllComptd = document.querySelector('.clear');
 clearAllComptd.addEventListener('click', () => {
-  taskList.clearAllCompleted()
-})
+  taskList.clearAllCompleted();
+});
 
 const enterBtn = document.getElementById('enter');
 const input = document.getElementById('theinput');
