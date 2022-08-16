@@ -130,7 +130,7 @@ class TaskList {
   }
 
   clearAllCompleted() {
-    this.doings = this.doings.filter((element) => element.completed === true);
+    this.doings = this.doings.filter((element) => element.completed === false);
     localStorage.setItem('storedlist', JSON.stringify(this.doings));
     window.location.reload();
   }
@@ -156,7 +156,7 @@ enterBtn.addEventListener('click', () => {
     input.value = '';
     index += 1;
   }
-  // localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
 });
 
 // keyboard Enter button support
