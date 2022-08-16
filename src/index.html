@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/lodash@4.17.20"></script>
     <script src="https://kit.fontawesome.com/e4fb871c71.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
     <link href="./style.css" type="text/css" rel="stylesheet"/>
     <title>TO_DO_LIST</title>
 </head>
@@ -14,26 +14,28 @@
 
         <div class="list-container">
            <div class="today-to">
-              <p>Today's To Do</p>
+              <p id="today-title">Today's To Do</p>
+              <img id="sync" src="sync.png" alt="sync">  
               <hr>
            </div>
 
         <div class="the-input">
             <input type="text" id="theinput"  placeholder="Add to your list...">
-            <i class="fa-regular fa-arrow-turn-down-left"></i>
+            <img id="enter" src="enter.png" alt="enter">
             <hr>
         </div>
-
-          <div class="to-dos"> </div>
+          <ul class="to-dos">    </ul>
        </div>
 
-      <div class="clear">
-        <a href="#"><p id="clear-p">Clear all completed</p></a>
-      </div>
+      <!-- <div >
+        <p ></p>
+      </div> -->
+      <button type="button" class="clear"> <span id="clear-p">Clear all completed</span></button>
+
+
 
     </div>
 
-    
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
