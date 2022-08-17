@@ -6,36 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4fb871c71.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/lodash@4.17.20"></script>
-    <link href="./style.css" type="text/css" rel="stylesheet"/>
+    <link href="/src/style.css" rel="stylesheet"/>
     <title>TO_DO_LIST</title>
 <script defer src="/index.bundle.js"></script></head>
 <body>
     <div class="the-list">
-
         <div class="list-container">
            <div class="today-to">
               <p id="today-title">Today's To Do</p>
-              <img id="sync" src="sync.png" alt="sync">  
+              <img id="sync" src="/src/sync.png" alt="sync">  
               <hr>
            </div>
-
         <div class="the-input">
             <input type="text" id="theinput"  placeholder="Add to your list...">
-            <img id="enter" src="enter.png" alt="enter">
+            <img id="enter" src="/src/enter.png" alt="enter">
             <hr>
         </div>
-          <ul class="to-dos">    </ul>
+          <ul class="to-dos"></ul>
        </div>
-
-      <div class="clear">
-        <a href="#"><p id="clear-p">Clear all completed</p></a>
-      </div>
-
+      <button type="button" class="clear"> <span id="clear-p">Clear all completed</span></button>
     </div>
-
-    <img class="ellipsis" src="ellipisis.png" alt="ellipisis">
-    <img class="del" src="delete.png" alt="del">
-
-    <script src="index.js"></script>
+    <script type="module" src="index.bundle.js"></script>
 </body>
 </html>
