@@ -1,4 +1,5 @@
 /* eslint-disable */
+// import './style.css';
 import Alltask from './modules/module1.js';
 import Status from './modules/module2.js';
 
@@ -35,7 +36,6 @@ class TaskList {
 
       // create paragraph
       eachParag[lis.index] = document.createElement('p');
-      /// ///////////////////////////////
       eachParag[lis.index].textContent = lis.description;
       eachParag[lis.index].setAttribute('id', lis.index);
       eachParag[lis.index].classList.add('eachParag');
@@ -149,7 +149,7 @@ const enterBtn = document.getElementById('enter');
 const input = document.getElementById('theinput');
 enterBtn.addEventListener('click', () => {
   if (!input.value.trim()) {
-    // !input.value
+    !input.value
   } else {
     taskList.add(input.value, completed, index);
     taskList.listFormat();
