@@ -2,17 +2,13 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: 'none',
   entry: {
     index: './src/index.js',
-  },
-  devServer: {
-    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      publicPath: '/',
     }),
   ],
   output: {
@@ -20,21 +16,12 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
-  module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
+    module: {
+        rules: [
           {
-            loader: 'file-loader',
+            test: /\.css$/i,
+            use: ['style-loader', 'css-loader'],
           },
         ],
       },
-
-    ],
-  },
 };
