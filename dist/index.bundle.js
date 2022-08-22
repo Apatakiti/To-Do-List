@@ -1,49 +1,517 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_module1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/module1.js */ \"./src/modules/module1.js\");\n/* harmony import */ var _modules_module2_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/module2.js */ \"./src/modules/module2.js\");\n/* eslint-disable */\r\n// import './style.css';\r\n\r\n\r\n\r\nclass TaskList {\r\n  constructor(doings = []) {\r\n    this.doings = doings;\r\n  }\r\n\r\n  listFormat() {\r\n    const todos = document.getElementsByClassName('to-dos');\r\n\r\n    if (todos) {\r\n      todos[0].innerHTML = '';\r\n    }\r\n\r\n    this.doings.forEach((lis) => {\r\n      const eachList = [];\r\n      const eachcheck = [];\r\n      const eachParag = [];\r\n      const eachbtn = [];\r\n      const checkNparagDiv = [];\r\n\r\n      // create editable List\r\n      eachList[lis.index] = document.createElement('li');\r\n      eachList[lis.index].contentEditable = true;\r\n      eachList[lis.index].setAttribute('id', lis.index);\r\n      eachList[lis.index].classList.add('indList');\r\n\r\n      // create check\r\n      eachcheck[lis.index] = document.createElement('input');\r\n      eachcheck[lis.index].setAttribute('type', 'checkbox');\r\n      eachcheck[lis.index].classList.add('checkbox');\r\n      eachcheck[lis.index].setAttribute('id', lis.index);\r\n\r\n      // create paragraph\r\n      eachParag[lis.index] = document.createElement('p');\r\n      eachParag[lis.index].textContent = lis.description;\r\n      eachParag[lis.index].setAttribute('id', lis.index);\r\n      eachParag[lis.index].classList.add('eachParag');\r\n\r\n      // create button\r\n      eachbtn[lis.index] = document.createElement('button');\r\n      eachbtn[lis.index].setAttribute('id', lis.index);\r\n      eachbtn[lis.index].innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n\r\n      // Div\r\n      checkNparagDiv[lis.index] = document.createElement('div');\r\n      checkNparagDiv[lis.index].append(eachcheck[lis.index], eachParag[lis.index]);\r\n      eachParag[lis.index].classList.add('checkNparagDiv');\r\n\r\n      // appending check, paragraph and button\r\n      eachList[lis.index].append(eachcheck[lis.index], eachParag[lis.index], eachbtn[lis.index]);\r\n\r\n      // appending each list\r\n      todos[0].append(eachList[lis.index]);\r\n\r\n      // On editing paragraph\r\n      eachParag[lis.index].addEventListener('click', (e) => {\r\n        e.target.nextSibling.innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n        e.target.nextSibling.style.cursor = 'pointer';\r\n        eachList[lis.index].style.backgroundColor = '#a6bdbe';\r\n        e.target.nextSibling.addEventListener('click', () => {\r\n          this.delete(eachList[lis.index]);\r\n        });\r\n      });\r\n\r\n      eachbtn[lis.index].addEventListener('click', () => {\r\n        this.delete(eachList[lis.index]);\r\n      });\r\n\r\n      eachList[lis.index].addEventListener('mouseleave', (eve) => {\r\n        eachbtn[lis.index].innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n        this.update(eve.target.id, eve.target.innerText);\r\n      });\r\n\r\n      // Listen for checking elements\r\n      eachcheck[lis.index].addEventListener('change', (e) => {\r\n        const status = new _modules_module2_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n        if (e.target.checked === true) {\r\n          status.checked(this.doings[lis.index]);\r\n        } else {\r\n          status.unchecked(this.doings[lis.index]);\r\n        }\r\n        this.update(e.target.nextSibling.id, e.target.nextSibling.innerText);\r\n\r\n        localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n      });\r\n\r\n      // conditions after checking\r\n      if (this.doings[lis.index].completed === true) {\r\n        eachcheck[lis.index].setAttribute('checked', 'checked');\r\n        eachList[lis.index].classList.add('checked');\r\n      } else if (this.doings[lis.index].completed === false) {\r\n        eachcheck[lis.index].removeAttribute('checked');\r\n        eachList[lis.index].classList.remove('checked');\r\n      }\r\n    });\r\n  }\r\n\r\n  add(description, completed, index) {\r\n    const allTask = new _modules_module1_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](description, completed, index);\r\n    this.doings.push(allTask);\r\n  }\r\n\r\n  delete(num) {\r\n    const key = num;\r\n    if (this.doings.length === 1) {\r\n      this.doings = [];\r\n    } else {\r\n      this.doings.splice(key, 1);\r\n    }\r\n    this.doings.forEach((lis, index) => {\r\n      lis.index = index;\r\n    });\r\n    this.listFormat();\r\n\r\n    localStorage.setItem('storedlist', JSON.stringify(taskList.doings)); \r\n  }\r\n\r\n  update(indexList, description) {\r\n    if (this.doings[indexList].index === Number(indexList)) {\r\n      this.doings[indexList].description = description;\r\n    }\r\n    this.doings.forEach((lis, index) => {\r\n      lis.index = index;\r\n    });\r\n    this.listFormat();\r\n  }\r\n\r\n  clearAllCompleted() {\r\n    this.doings = this.doings.filter((element) => element.completed === false);\r\n    localStorage.setItem('storedlist', JSON.stringify(this.doings));\r\n    window.location.reload();\r\n  }\r\n}\r\n\r\nlet index = 0;\r\nconst completed = false;\r\nconst taskList = new TaskList();\r\n\r\nconst clearAllComptd = document.querySelector('.clear');\r\nclearAllComptd.addEventListener('click', () => {\r\n  taskList.clearAllCompleted();\r\n});\r\n\r\nconst enterBtn = document.getElementById('enter');\r\nconst input = document.getElementById('theinput');\r\nenterBtn.addEventListener('click', () => {\r\n  if (!input.value.trim()) {\r\n    !input.value\r\n  } else {\r\n    taskList.add(input.value, completed, index);\r\n    taskList.listFormat();\r\n    input.value = '';\r\n    index += 1;\r\n  }\r\n  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n});\r\n\r\n// keyboard Enter button support\r\nwindow.addEventListener('keydown', (e) => {\r\n  if (e.key === 'Enter') {\r\n    enterBtn.click();\r\n  }\r\n  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n});\r\n\r\nwindow.addEventListener('load', () => {\r\n  taskList.doings = JSON.parse(localStorage.getItem('storedlist'));\r\n  if (taskList.doings) {\r\n    taskList.listFormat();\r\n  } else {\r\n    taskList.doings = [];\r\n  }\r\n});\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_module1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/module1.js */ \"./src/modules/module1.js\");\n/* harmony import */ var _modules_module2_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/module2.js */ \"./src/modules/module2.js\");\n/* eslint-disable */\r\n\r\n\r\n\r\nclass TaskList {\r\n  constructor(doings = []) {\r\n    this.doings = doings;\r\n  }\r\n\r\n  listFormat() {\r\n    const todos = document.getElementsByClassName('to-dos');\r\n\r\n    if (todos) {\r\n      todos[0].innerHTML = '';\r\n    }\r\n\r\n    this.doings.forEach((lis) => {\r\n      const eachList = [];\r\n      const eachcheck = [];\r\n      const eachParag = [];\r\n      const eachbtn = [];\r\n      const checkNparagDiv = [];\r\n\r\n      // create editable List\r\n      eachList[lis.index] = document.createElement('li');\r\n      eachList[lis.index].contentEditable = true;\r\n      eachList[lis.index].setAttribute('id', lis.index);\r\n      eachList[lis.index].classList.add('indList');\r\n\r\n      // create check\r\n      eachcheck[lis.index] = document.createElement('input');\r\n      eachcheck[lis.index].setAttribute('type', 'checkbox');\r\n      eachcheck[lis.index].classList.add('checkbox');\r\n      eachcheck[lis.index].setAttribute('id', lis.index);\r\n\r\n      // create paragraph\r\n      eachParag[lis.index] = document.createElement('p');\r\n      /// ///////////////////////////////\r\n      eachParag[lis.index].textContent = lis.description;\r\n      eachParag[lis.index].setAttribute('id', lis.index);\r\n      eachParag[lis.index].classList.add('eachParag');\r\n\r\n      // create button\r\n      eachbtn[lis.index] = document.createElement('button');\r\n      eachbtn[lis.index].setAttribute('id', lis.index);\r\n      eachbtn[lis.index].innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n\r\n      // Div\r\n      checkNparagDiv[lis.index] = document.createElement('div');\r\n      checkNparagDiv[lis.index].append(eachcheck[lis.index], eachParag[lis.index]);\r\n      eachParag[lis.index].classList.add('checkNparagDiv');\r\n\r\n      // appending check, paragraph and button\r\n      eachList[lis.index].append(eachcheck[lis.index], eachParag[lis.index], eachbtn[lis.index]);\r\n\r\n      // appending each list\r\n      todos[0].append(eachList[lis.index]);\r\n\r\n      // On editing paragraph\r\n      eachParag[lis.index].addEventListener('click', (e) => {\r\n        e.target.nextSibling.innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n        e.target.nextSibling.style.cursor = 'pointer';\r\n        eachList[lis.index].style.backgroundColor = '#a6bdbe';\r\n        e.target.nextSibling.addEventListener('click', () => {\r\n          this.delete(eachList[lis.index]);\r\n        });\r\n      });\r\n\r\n      eachbtn[lis.index].addEventListener('click', () => {\r\n        this.delete(eachList[lis.index]);\r\n      });\r\n\r\n      eachList[lis.index].addEventListener('mouseleave', (eve) => {\r\n        eachbtn[lis.index].innerHTML = '<i class=\"fa-solid fa-trash\"></i>';\r\n        this.update(eve.target.id, eve.target.innerText);\r\n      });\r\n\r\n      // Listen for checking elements\r\n      eachcheck[lis.index].addEventListener('change', (e) => {\r\n        const status = new _modules_module2_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]();\r\n        if (e.target.checked === true) {\r\n          status.checked(this.doings[lis.index]);\r\n        } else {\r\n          status.unchecked(this.doings[lis.index]);\r\n        }\r\n        this.update(e.target.nextSibling.id, e.target.nextSibling.innerText);\r\n\r\n        localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n      });\r\n\r\n      // conditions after checking\r\n      if (this.doings[lis.index].completed === true) {\r\n        eachcheck[lis.index].setAttribute('checked', 'checked');\r\n        eachList[lis.index].classList.add('checked');\r\n      } else if (this.doings[lis.index].completed === false) {\r\n        eachcheck[lis.index].removeAttribute('checked');\r\n        eachList[lis.index].classList.remove('checked');\r\n      }\r\n    });\r\n  }\r\n\r\n  add(description, completed, index) {\r\n    const allTask = new _modules_module1_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](description, completed, index);\r\n    this.doings.push(allTask);\r\n  }\r\n\r\n  delete(num) {\r\n    const key = num;\r\n    if (this.doings.length === 1) {\r\n      this.doings = [];\r\n    } else {\r\n      this.doings.splice(key, 1);\r\n    }\r\n    this.doings.forEach((lis, index) => {\r\n      lis.index = index;\r\n    });\r\n    this.listFormat();\r\n\r\n    localStorage.setItem('storedlist', JSON.stringify(taskList.doings)); \r\n  }\r\n\r\n  update(indexList, description) {\r\n    if (this.doings[indexList].index === Number(indexList)) {\r\n      this.doings[indexList].description = description;\r\n    }\r\n    this.doings.forEach((lis, index) => {\r\n      lis.index = index;\r\n    });\r\n    this.listFormat();\r\n  }\r\n\r\n  clearAllCompleted() {\r\n    this.doings = this.doings.filter((element) => element.completed === false);\r\n    localStorage.setItem('storedlist', JSON.stringify(this.doings));\r\n    window.location.reload();\r\n  }\r\n}\r\n\r\nlet index = 0;\r\nconst completed = false;\r\nconst taskList = new TaskList();\r\n\r\nconst clearAllComptd = document.querySelector('.clear');\r\nclearAllComptd.addEventListener('click', () => {\r\n  taskList.clearAllCompleted();\r\n});\r\n\r\nconst enterBtn = document.getElementById('enter');\r\nconst input = document.getElementById('theinput');\r\nenterBtn.addEventListener('click', () => {\r\n  if (!input.value.trim()) {\r\n    // !input.value\r\n  } else {\r\n    taskList.add(input.value, completed, index);\r\n    taskList.listFormat();\r\n    input.value = '';\r\n    index += 1;\r\n  }\r\n  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n});\r\n\r\n// keyboard Enter button support\r\nwindow.addEventListener('keydown', (e) => {\r\n  if (e.key === 'Enter') {\r\n    enterBtn.click();\r\n  }\r\n  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));\r\n});\r\n\r\nwindow.addEventListener('load', () => {\r\n  taskList.doings = JSON.parse(localStorage.getItem('storedlist'));\r\n  if (taskList.doings) {\r\n    taskList.listFormat();\r\n  } else {\r\n    taskList.doings = [];\r\n  }\r\n});\n\n//# sourceURL=webpack://to-do-list/./src/index.js?");
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
+/* 2 */
+/***/ ((module) => {
 
-/***/ "./src/modules/module1.js":
-/*!********************************!*\
-  !*** ./src/modules/module1.js ***!
-  \********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Alltask)\n/* harmony export */ });\nclass Alltask {\r\n  constructor(description, completed = false, index) {\r\n    this.description = description;\r\n    this.completed = completed;\r\n    this.index = index;\r\n  }\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/modules/module1.js?");
+
+var stylesInDOM = [];
+
+function getIndexByIdentifier(identifier) {
+  var result = -1;
+
+  for (var i = 0; i < stylesInDOM.length; i++) {
+    if (stylesInDOM[i].identifier === identifier) {
+      result = i;
+      break;
+    }
+  }
+
+  return result;
+}
+
+function modulesToDom(list, options) {
+  var idCountMap = {};
+  var identifiers = [];
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var count = idCountMap[id] || 0;
+    var identifier = "".concat(id, " ").concat(count);
+    idCountMap[id] = count + 1;
+    var indexByIdentifier = getIndexByIdentifier(identifier);
+    var obj = {
+      css: item[1],
+      media: item[2],
+      sourceMap: item[3],
+      supports: item[4],
+      layer: item[5]
+    };
+
+    if (indexByIdentifier !== -1) {
+      stylesInDOM[indexByIdentifier].references++;
+      stylesInDOM[indexByIdentifier].updater(obj);
+    } else {
+      var updater = addElementStyle(obj, options);
+      options.byIndex = i;
+      stylesInDOM.splice(i, 0, {
+        identifier: identifier,
+        updater: updater,
+        references: 1
+      });
+    }
+
+    identifiers.push(identifier);
+  }
+
+  return identifiers;
+}
+
+function addElementStyle(obj, options) {
+  var api = options.domAPI(options);
+  api.update(obj);
+
+  var updater = function updater(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap && newObj.supports === obj.supports && newObj.layer === obj.layer) {
+        return;
+      }
+
+      api.update(obj = newObj);
+    } else {
+      api.remove();
+    }
+  };
+
+  return updater;
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  list = list || [];
+  var lastIdentifiers = modulesToDom(list, options);
+  return function update(newList) {
+    newList = newList || [];
+
+    for (var i = 0; i < lastIdentifiers.length; i++) {
+      var identifier = lastIdentifiers[i];
+      var index = getIndexByIdentifier(identifier);
+      stylesInDOM[index].references--;
+    }
+
+    var newLastIdentifiers = modulesToDom(newList, options);
+
+    for (var _i = 0; _i < lastIdentifiers.length; _i++) {
+      var _identifier = lastIdentifiers[_i];
+
+      var _index = getIndexByIdentifier(_identifier);
+
+      if (stylesInDOM[_index].references === 0) {
+        stylesInDOM[_index].updater();
+
+        stylesInDOM.splice(_index, 1);
+      }
+    }
+
+    lastIdentifiers = newLastIdentifiers;
+  };
+};
 
 /***/ }),
+/* 3 */
+/***/ ((module) => {
 
-/***/ "./src/modules/module2.js":
-/*!********************************!*\
-  !*** ./src/modules/module2.js ***!
-  \********************************/
+
+
+/* istanbul ignore next  */
+function apply(styleElement, options, obj) {
+  var css = "";
+
+  if (obj.supports) {
+    css += "@supports (".concat(obj.supports, ") {");
+  }
+
+  if (obj.media) {
+    css += "@media ".concat(obj.media, " {");
+  }
+
+  var needLayer = typeof obj.layer !== "undefined";
+
+  if (needLayer) {
+    css += "@layer".concat(obj.layer.length > 0 ? " ".concat(obj.layer) : "", " {");
+  }
+
+  css += obj.css;
+
+  if (needLayer) {
+    css += "}";
+  }
+
+  if (obj.media) {
+    css += "}";
+  }
+
+  if (obj.supports) {
+    css += "}";
+  }
+
+  var sourceMap = obj.sourceMap;
+
+  if (sourceMap && typeof btoa !== "undefined") {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  options.styleTagTransform(css, styleElement, options.options);
+}
+
+function removeStyleElement(styleElement) {
+  // istanbul ignore if
+  if (styleElement.parentNode === null) {
+    return false;
+  }
+
+  styleElement.parentNode.removeChild(styleElement);
+}
+/* istanbul ignore next  */
+
+
+function domAPI(options) {
+  var styleElement = options.insertStyleElement(options);
+  return {
+    update: function update(obj) {
+      apply(styleElement, options, obj);
+    },
+    remove: function remove() {
+      removeStyleElement(styleElement);
+    }
+  };
+}
+
+module.exports = domAPI;
+
+/***/ }),
+/* 4 */
+/***/ ((module) => {
+
+
+
+var memo = {};
+/* istanbul ignore next  */
+
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+
+    memo[target] = styleTarget;
+  }
+
+  return memo[target];
+}
+/* istanbul ignore next  */
+
+
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+
+  target.appendChild(style);
+}
+
+module.exports = insertBySelector;
+
+/***/ }),
+/* 5 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+/* 6 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+
+module.exports = insertStyleElement;
+
+/***/ }),
+/* 7 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function styleTagTransform(css, styleElement) {
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css;
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild);
+    }
+
+    styleElement.appendChild(document.createTextNode(css));
+  }
+}
+
+module.exports = styleTagTransform;
+
+/***/ }),
+/* 8 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  outline: none;\r\n}\r\n\r\nbody {\r\n  background-color: rgb(146, 146, 146);\r\n}\r\n\r\n.the-list {\r\n  background-color: rgb(255, 255, 255);\r\n  margin: 10%;\r\n  display: grid;\r\n}\r\n\r\n.list-container {\r\n  background-color: rgb(255, 255, 255);\r\n  padding: 1%;\r\n}\r\n\r\n.today-to {\r\n  padding: 3% 0;\r\n  display: flex;\r\n}\r\n\r\n#today-title {\r\n  flex: 1;\r\n}\r\n\r\n#sync {\r\n  width: 7%;\r\n}\r\n\r\n.the-input {\r\n  display: flex;\r\n}\r\n\r\n#theinput {\r\n  flex: 1;\r\n  border: none;\r\n  padding: 3% 0;\r\n  outline: none;\r\n}\r\n\r\n#enter {\r\n  width: 7%;\r\n}\r\n\r\n.del {\r\n  width: 7%;\r\n}\r\n\r\n.to-dos {\r\n  display: flex;\r\n  flex-direction: column;\r\n  padding: 2%;\r\n}\r\n\r\n.todo-container {\r\n  display: flex;\r\n  flex-direction: row;\r\n  padding: 3% 0;\r\n}\r\n\r\n.check-descrip {\r\n  flex: 1;\r\n  display: flex;\r\n}\r\n\r\n.descripti {\r\n  margin-left: 3%;\r\n}\r\n\r\n.ellipsis {\r\n  width: 7%;\r\n  flex: 0.01;\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-items: flex-end;\r\n}\r\n\r\n.clear {\r\n  background-color: rgb(210, 210, 210);\r\n  padding: 5%;\r\n  border: none;\r\n}\r\n\r\n#clear-p {\r\n  text-align: center;\r\n}\r\n\r\n::-webkit-input-placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n::-moz-placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n:-moz-placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n:-ms-input-placeholder {\r\n  font-style: italic;\r\n}\r\n\r\n.indList {\r\n  display: flex;\r\n  padding: 3% 0;\r\n}\r\n\r\n.eachParag {\r\n  margin-left: 4%;\r\n}\r\n\r\n.checkNparagDiv {\r\n  flex: 1;\r\n}\r\n\r\n.checked {\r\n  background-color: rgb(199, 199, 199);\r\n  text-decoration: line-through;\r\n  color: #a6bdbe;\r\n}\r\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 9 */
+/***/ ((module) => {
+
+
+
+module.exports = function (i) {
+  return i[1];
+};
+
+/***/ }),
+/* 10 */
+/***/ ((module) => {
+
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+
+      content += cssWithMappingToString(item);
+
+      if (needLayer) {
+        content += "}";
+      }
+
+      if (item[2]) {
+        content += "}";
+      }
+
+      if (item[4]) {
+        content += "}";
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+
+
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+/***/ }),
+/* 11 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Status)\n/* harmony export */ });\nclass Status {\r\n  constructor() {\r\n    this.completed = false;\r\n  }\r\n\r\n    checked = (element) => {\r\n      element.completed = true;\r\n    }\r\n\r\n    unchecked = (element) => {\r\n      element.completed = false;\r\n    }\r\n}\n\n//# sourceURL=webpack://to-do-list/./src/modules/module2.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Alltask)
+/* harmony export */ });
+class Alltask {
+  constructor(description, completed = false, index) {
+    this.description = description;
+    this.completed = completed;
+    this.index = index;
+  }
+}
+
+/***/ }),
+/* 12 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Status)
+/* harmony export */ });
+class Status {
+  constructor() {
+    this.completed = false;
+  }
+
+    checked = (element) => {
+      element.completed = true;
+    }
+
+    unchecked = (element) => {
+      element.completed = false;
+    }
+}
 
 /***/ })
-
-/******/ 	});
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -57,7 +525,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
+/******/ 			id: moduleId,
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -70,6 +538,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	(() => {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = (module) => {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -98,12 +578,197 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/nonce */
+/******/ 	(() => {
+/******/ 		__webpack_require__.nc = undefined;
+/******/ 	})();
+/******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _modules_module1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_module2_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* eslint-disable */
+
+
+
+
+class TaskList {
+  constructor(doings = []) {
+    this.doings = doings;
+  }
+
+  listFormat() {
+    const todos = document.getElementsByClassName('to-dos');
+
+    if (todos) {
+      todos[0].innerHTML = '';
+    }
+
+    this.doings.forEach((lis) => {
+      const eachList = [];
+      const eachcheck = [];
+      const eachParag = [];
+      const eachbtn = [];
+      const checkNparagDiv = [];
+
+      // create editable List
+      eachList[lis.index] = document.createElement('li');
+      eachList[lis.index].contentEditable = true;
+      eachList[lis.index].setAttribute('id', lis.index);
+      eachList[lis.index].classList.add('indList');
+
+      // create check
+      eachcheck[lis.index] = document.createElement('input');
+      eachcheck[lis.index].setAttribute('type', 'checkbox');
+      eachcheck[lis.index].classList.add('checkbox');
+      eachcheck[lis.index].setAttribute('id', lis.index);
+
+      // create paragraph
+      eachParag[lis.index] = document.createElement('p');
+      eachParag[lis.index].textContent = lis.description;
+      eachParag[lis.index].setAttribute('id', lis.index);
+      eachParag[lis.index].classList.add('eachParag');
+
+      // create button
+      eachbtn[lis.index] = document.createElement('button');
+      eachbtn[lis.index].setAttribute('id', lis.index);
+      eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-trash"></i>';
+
+      // Div
+      checkNparagDiv[lis.index] = document.createElement('div');
+      checkNparagDiv[lis.index].append(eachcheck[lis.index], eachParag[lis.index]);
+      eachParag[lis.index].classList.add('checkNparagDiv');
+
+      // appending check, paragraph and button
+      eachList[lis.index].append(eachcheck[lis.index], eachParag[lis.index], eachbtn[lis.index]);
+
+      // appending each list
+      todos[0].append(eachList[lis.index]);
+
+      // On editing paragraph
+      eachParag[lis.index].addEventListener('click', (e) => {
+        e.target.nextSibling.innerHTML = '<i class="fa-solid fa-trash"></i>';
+        e.target.nextSibling.style.cursor = 'pointer';
+        eachList[lis.index].style.backgroundColor = '#a6bdbe';
+        e.target.nextSibling.addEventListener('click', () => {
+          this.delete(eachList[lis.index]);
+        });
+      });
+
+      eachbtn[lis.index].addEventListener('click', () => {
+        this.delete(eachList[lis.index]);
+      });
+
+      eachList[lis.index].addEventListener('mouseleave', (eve) => {
+        eachbtn[lis.index].innerHTML = '<i class="fa-solid fa-trash"></i>';
+        this.update(eve.target.id, eve.target.innerText);
+      });
+
+      // Listen for checking elements
+      eachcheck[lis.index].addEventListener('change', (e) => {
+        const status = new _modules_module2_js__WEBPACK_IMPORTED_MODULE_2__["default"]();
+        if (e.target.checked === true) {
+          status.checked(this.doings[lis.index]);
+        } else {
+          status.unchecked(this.doings[lis.index]);
+        }
+        this.update(e.target.nextSibling.id, e.target.nextSibling.innerText);
+
+        localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+      });
+
+      // conditions after checking
+      if (this.doings[lis.index].completed === true) {
+        eachcheck[lis.index].setAttribute('checked', 'checked');
+        eachList[lis.index].classList.add('checked');
+      } else if (this.doings[lis.index].completed === false) {
+        eachcheck[lis.index].removeAttribute('checked');
+        eachList[lis.index].classList.remove('checked');
+      }
+    });
+  }
+
+  add(description, completed, index) {
+    const allTask = new _modules_module1_js__WEBPACK_IMPORTED_MODULE_1__["default"](description, completed, index);
+    this.doings.push(allTask);
+  }
+
+  delete(num) {
+    const key = num;
+    if (this.doings.length === 1) {
+      this.doings = [];
+    } else {
+      this.doings.splice(key, 1);
+    }
+    this.doings.forEach((lis, index) => {
+      lis.index = index;
+    });
+    this.listFormat();
+
+    localStorage.setItem('storedlist', JSON.stringify(taskList.doings)); 
+  }
+
+  update(indexList, description) {
+    if (this.doings[indexList].index === Number(indexList)) {
+      this.doings[indexList].description = description;
+    }
+    this.doings.forEach((lis, index) => {
+      lis.index = index;
+    });
+    this.listFormat();
+  }
+
+  clearAllCompleted() {
+    this.doings = this.doings.filter((element) => element.completed === false);
+    localStorage.setItem('storedlist', JSON.stringify(this.doings));
+    window.location.reload();
+  }
+}
+
+let index = 0;
+const completed = false;
+const taskList = new TaskList();
+
+const clearAllComptd = document.querySelector('.clear');
+clearAllComptd.addEventListener('click', () => {
+  taskList.clearAllCompleted();
+});
+
+const enterBtn = document.getElementById('enter');
+const input = document.getElementById('theinput');
+enterBtn.addEventListener('click', () => {
+  if (!input.value.trim()) {
+    !input.value
+  } else {
+    taskList.add(input.value, completed, index);
+    taskList.listFormat();
+    input.value = '';
+    index += 1;
+  }
+  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+});
+
+// keyboard Enter button support
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    enterBtn.click();
+  }
+  localStorage.setItem('storedlist', JSON.stringify(taskList.doings));
+});
+
+window.addEventListener('load', () => {
+  taskList.doings = JSON.parse(localStorage.getItem('storedlist'));
+  if (taskList.doings) {
+    taskList.listFormat();
+  } else {
+    taskList.doings = [];
+  }
+});
+})();
+
 /******/ })()
 ;
