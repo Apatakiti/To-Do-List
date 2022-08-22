@@ -1,5 +1,5 @@
 /* eslint-disable */
-// import './style.css';
+import './style.css';
 import Alltask from './modules/module1.js';
 import Status from './modules/module2.js';
 
