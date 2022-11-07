@@ -1,6 +1,81 @@
-# To-Do-List
-This is a To-do-list web application to list Tasks. Built with JavaScript and Webpack.
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# TO-DO-LIST
+
+This is a Web Application where users . Built with JavaScript and Webpack.
 [LIVE DEMO](https://ademola-coding.github.io/To-Do-List/)
+
+# Awesome-Book: with ES6
+
+> Description of the Project
+ 
+ This is a simple web application where users can add and also remove a book including its author from the book List, built with HTML, CSS and JavaScript.
+  
+![Awesome Book 11-7-2022 2-06-26 PM](https://user-images.githubusercontent.com/96092850/200319526-7f63d74f-0b12-47d0-93aa-2c446d33cc72.png)
+
+![Awesome Book 11-7-2022 2-06-05 PM](https://user-images.githubusercontent.com/96092850/200319544-65ba1645-b639-45ca-8dd5-8c5b1fe53864.png)
+
+ [Click me for video Descriptio and Preview](https://www.loom.com/share/701f674fa6944e5e80b422f711a6f954)
+
+## Built With
+
+- Major languages: Html, Css and Javascript
+- Technologies used: linter, lightHouse, Weblint, Webpack.
+
+## Live Demo here
+
+[Live Demo Link](https://ademola-coding.github.io/Awesome-Book-with-ES6/)
+
+## Getting Started
+
+you can have a copy of this project by cloning this repo to your local machine
+`https://github.com/Ademola-coding/To-Do-List.git`
+
+## procedure
+- open git bash
+- git mkdir Todolist
+- cd Todolist
+- git clone `https://github.com/Ademola-coding/To-Do-List
+.git`
+- code .
+
+## Install
+ 
+ - `npm i`
+ 
+with the steps above, you can have a copy of the project 
+
+### Prerequisites
+
+- **Web Browser**
+
+## Authors
+
+👤 **Ademola Owoeye**
+
+- GitHub: [@githubhandle](https://github.com/Ademola-coding)
+- Twitter: [@twitterhandle](https://twitter.com/steady1700)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/resume-builder/urn:li:fs_memberResume:27973521/)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
 
 
 <!-- capstone
