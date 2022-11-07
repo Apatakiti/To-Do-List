@@ -2,18 +2,10 @@
 
 # TO-DO-LIST
 
-This is a Web Application where users . Built with JavaScript and Webpack.
-[LIVE DEMO](https://ademola-coding.github.io/To-Do-List/)
-
-# Awesome-Book: with ES6
-
 > Description of the Project
  
- This is a simple web application where users can add and also remove a book including its author from the book List, built with HTML, CSS and JavaScript.
-  
-![Awesome Book 11-7-2022 2-06-26 PM](https://user-images.githubusercontent.com/96092850/200319526-7f63d74f-0b12-47d0-93aa-2c446d33cc72.png)
+ This is a web application where users can add a task, complete a task by checking it, edit a task and also delete a task, it is built with HTML, CSS, JavaScript and Webpack.
 
-![Awesome Book 11-7-2022 2-06-05 PM](https://user-images.githubusercontent.com/96092850/200319544-65ba1645-b639-45ca-8dd5-8c5b1fe53864.png)
 
  [Click me for video Descriptio and Preview](https://www.loom.com/share/701f674fa6944e5e80b422f711a6f954)
 
@@ -24,7 +16,7 @@ This is a Web Application where users . Built with JavaScript and Webpack.
 
 ## Live Demo here
 
-[Live Demo Link](https://ademola-coding.github.io/Awesome-Book-with-ES6/)
+[Live Demo Link](https://ademola-coding.github.io/To-Do-List/)
 
 ## Getting Started
 
@@ -43,13 +35,16 @@ you can have a copy of this project by cloning this repo to your local machine
  
  - `npm i`
  
-with the steps above, you can have a copy of the project 
+ ## Run
+ - `npm start`
 
 ### Prerequisites
 
 - **Web Browser**
 
-## Authors
+with the steps above, you can have a copy of the project 
+
+## Author
 
 👤 **Ademola Owoeye**
 
