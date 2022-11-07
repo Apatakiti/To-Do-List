@@ -5,7 +5,8 @@
 > Description of the Project
  
  This is a web application where users can add a task, complete a task by checking it, edit a task and also delete a task, it is built with HTML, CSS, JavaScript and Webpack.
-
+ 
+![TO-DO-LIST 11-7-2022 7-32-48 PM](https://user-images.githubusercontent.com/96092850/200387918-07287eed-abe7-4b29-910f-4270fcb6aaa0.png)
 
  [Click me for video Descriptio and Preview](https://www.loom.com/share/701f674fa6944e5e80b422f711a6f954)
 
